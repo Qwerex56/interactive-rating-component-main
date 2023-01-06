@@ -5,9 +5,14 @@ function SelectRating(score) {
 }
 
 function SubmitScore() {
+  if (choice == 0) {
+    alert("Please select a valid rating");
+    return;
+  }
+
   const rate_state = document.querySelector("#state-rating");
   const thank_you_state = document.querySelector("#state-thank-you");
-  const text = document.querySelector("p#ty-element.rate-component__description:first-of-type");
+  const text = document.querySelector(".submitted-score");
 
   rate_state.style.display = 'none';
   thank_you_state.style.display = 'flex';

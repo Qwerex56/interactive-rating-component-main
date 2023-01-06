@@ -18,6 +18,7 @@
   <title>Interactive rating component | HTML CSS JS DOM BEM</title>
 </head>
 <body>
+<main>
   <div id="state-rating" class="rate-component">
     <img src="./src/images/icon-star.svg" alt="star-image" class="rate-component__star-logo">
     <h1 class="rate-component__heading">
@@ -28,27 +29,28 @@
       to help us improve our offering!
     </p>
     <div class="rate-component__button-container">
-      <button onclick="SelectRating(1)" class="rate-component__rate-button">1</button>
-      <button onclick="SelectRating(2)" class="rate-component__rate-button">2</button>
-      <button onclick="SelectRating(3)" class="rate-component__rate-button">3</button>
-      <button onclick="SelectRating(4)" class="rate-component__rate-button">4</button>
-      <button onclick="SelectRating(5)" class="rate-component__rate-button">5</button>
+      <input type="radio" name="rate" onclick="SelectRating(1)" id="but1" class="rate-component__rate-button"><label for="but1" class="rate-component__button-label">1</label></input>
+      <input type="radio" name="rate" onclick="SelectRating(2)" id="but2" class="rate-component__rate-button"><label for="but2" class="rate-component__button-label">2</label></input>
+      <input type="radio" name="rate" onclick="SelectRating(3)" id="but3" class="rate-component__rate-button"><label for="but3" class="rate-component__button-label">3</label></input>
+      <input type="radio" name="rate" onclick="SelectRating(4)" id="but4" class="rate-component__rate-button"><label for="but4" class="rate-component__button-label">4</label></input>
+      <input type="radio" name="rate" onclick="SelectRating(5)" id="but5" class="rate-component__rate-button"><label for="but5" class="rate-component__button-label">5</label></input>
     </div>
     <button onclick="SubmitScore()" class="rate-component__submit">Submit</button>
   </div>
 
   <div id="state-thank-you" class="rate-component">
     <img src="./src/images/illustration-thank-you.svg" alt="" class="rate-component__ty-logo">
-    <p id="ty-element" class="rate-component__description">
+    <p class="rate-component__description submitted-score">
       You selected <!-- Add rating here --> out of 5
     </p>
-    <h1 id="ty-element" class="rate-component__heading">
+    <h1 class="rate-component__heading">
       Thank you!
     </h1>
-    <p id="ty-element" class="rate-component__description">
+    <p class="rate-component__description">
       We appreciate you taking the time to give a rating. If you ever need more support,
       don't hesitate to get in touch!    
     </p>
   </div>
+</main>
 </body>
 </html>

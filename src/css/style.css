@@ -10,13 +10,6 @@ body {
   font-family: var(--overpass), sans-serif;
 }
 
-@media screen and (min-width: 1440px) {
-  .rate-component {
-    max-width: 412px;
-    border-radius: 1.875rem;
-  }
-}
-
 .rate-component {
   margin: inherit;
   margin-top: 25vh;
@@ -35,16 +28,15 @@ body {
 
 #state-thank-you.rate-component {
   display: none;
+  align-items: center;
+
+  text-align: center;
 }
 
-@media screen and (min-height: 1440px) {
-  .rate-component__star-logo {
-    padding: 16px;
-    max-width: 16px;
-  }
-
-  .rate-component__ty-logo {
-    max-width: 162px;
+@media screen and (min-width: 1440px) {
+  .rate-component {
+    max-width: 412px;
+    border-radius: 1.875rem;
   }
 }
 
@@ -63,19 +55,14 @@ body {
   margin: 1.5rem auto;
 }
 
-@media screen and (min-width: 1440px) {
-  .rate-component__heading {
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-    font-size: 1.75rem;
+@media screen and (min-height: 1440px) {
+  .rate-component__star-logo {
+    padding: 16px;
+    max-width: 16px;
   }
 
-  .rate-component__description {
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-    font-size: 0.938rem;
+  .rate-component__ty-logo {
+    max-width: 162px;
   }
 }
 
@@ -97,17 +84,89 @@ body {
   font-weight: var(--regular-weigth);
 }
 
-#ty-element {
-  margin-top: 1.5rem;
+.submitted-score {
+  padding: 4px 20px;
+  max-width: fit-content;
+  border-radius: 1.375rem;
+
+  background-color: var(--dark-blue);
+  color: orange;
+}
+
+@media screen and (min-width: 1440px) {
+  .rate-component__heading {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-size: 1.75rem;
+  }
+
+  .rate-component__description {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-size: 0.938rem;
+  }
+}
+
+.rate-component__button-container {
+  max-width: 281px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rate-component__rate-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  border-radius: 50%;
+  background-clip: content-box;
+  
+  background-color: var(--dark-blue);
+  color: inherit;
+}
+
+.rate-component__rate-button:hover {
+  background-color: var(--orange);
+}
+
+.rate-component__rate-button:hover + .rate-component__button-label {
+  color: var(--white);
+}
+
+.rate-component__rate-button:checked {
+  background-color: var(--medium-grey);
+}
+
+.rate-component__rate-button:checked + .rate-component__button-label {
+  color: var(--white);
+}
+
+.rate-component__button-label {
+  width: 10px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-28px);
+
   text-align: center;
 }
 
-p#ty-element.rate-component__description:first-of-type {
-  margin: 0 auto;
-  padding: 5px 12px;
+.rate-component__submit {
+  min-width: 280px;
+  min-height: 45px;
+  margin: 1.5rem 1.5rem 2rem 1.5rem;
+  border: none;
   border-radius: 1.375rem;
   
-  background-color: var(--dark-blue);
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rate-component__submit:hover {
+  background-color: var(--white);
   color: var(--orange);
 }
 
@@ -127,48 +186,8 @@ p#ty-element.rate-component__description:first-of-type {
     max-width: 340px;
     margin: 2rem;
   }
-}
 
-.rate-component__button-container {
-  max-width: 281px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.rate-component__rate-button {
-  min-width: 42px;
-  min-height: 42px;
-  border: none;
-  border-radius: 50%;
-
-  background-color: var(--dark-blue);
-  color: inherit;
-}
-
-.rate-component__rate-button:hover {
-  background-color: var(--orange);
-  color: var(--white);
-}
-
-.rate-component__rate-button:active {
-  background-color: var(--medium-grey);
-  color: var(--white)
-}
-
-.rate-component__submit {
-  min-width: 280px;
-  min-height: 45px;
-  margin: 1.5rem 1.5rem 2rem 1.5rem;
-  border: none;
-  border-radius: 1.375rem;
-
-  background-color: var(--orange);
-  color: var(--white);
-}
-
-.rate-component__submit:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  .rate-component__button-label {
+      transform: translateX(-32px);
+  }
 }
