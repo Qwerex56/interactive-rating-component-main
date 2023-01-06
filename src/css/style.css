@@ -99,6 +99,7 @@ body {
     margin-right: 2rem;
 
     font-size: 1.75rem;
+    font-weight: var(--bold-weight);
   }
 
   .rate-component__description {
@@ -106,6 +107,7 @@ body {
     margin-right: 2rem;
 
     font-size: 0.938rem;
+    font-weight: var(--regular-weigth);
   }
 }
 
@@ -152,6 +154,7 @@ body {
   transform: translateX(-28px);
 
   text-align: center;
+  font-weight: var(--bold-weight);
 }
 
 .rate-component__submit {
@@ -163,6 +166,9 @@ body {
   
   background-color: var(--orange);
   color: var(--white);
+
+  font-weight: var(--bold-weight);
+  letter-spacing: 2px;
 }
 
 .rate-component__submit:hover {
