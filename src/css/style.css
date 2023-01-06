@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--very-dark-blue);
+  color: var(--medium-grey);
+
+  font-family: var(--overpass), sans-serif;
+}
+
+@media screen and (min-width: 1440px) {
+  .rate-component {
+    max-width: 412px;
+    border-radius: 1.875rem;
+  }
+}
+
+.rate-component {
+  margin: inherit;
+  margin-top: 25vh;
+  max-width: 327px;
+  border-radius: 0.938rem;
+
+  display: flex;
+  flex-direction: column;
+  
+  background: radial-gradient(circle at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(215, 24%, 12%) 100%);
+}
+
+#state-rating.rate-component {
+  visibility: visible;
+}
+
+#state-thank-you.rate-component {
+  display: none;
+}
+
+@media screen and (min-height: 1440px) {
+  .rate-component__star-logo {
+    padding: 16px;
+    max-width: 16px;
+  }
+
+  .rate-component__ty-logo {
+    max-width: 162px;
+  }
+}
+
+.rate-component__star-logo {
+  box-sizing: content-box;
+  margin: 1.5rem 0 0 1.5rem;
+  padding: 14px;
+  max-width: 13px;
+  border-radius: 50%;
+  
+  background-color: var(--dark-blue);
+}
+
+.rate-component__ty-logo {
+  max-width: 144px;
+  margin: 1.5rem auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .rate-component__heading {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-size: 1.75rem;
+  }
+
+  .rate-component__description {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-size: 0.938rem;
+  }
+}
+
+.rate-component__heading {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+  color: var(--white);
+
+  font-size: 1.5rem;
+  font-weight: var(--bold-weight);
+}
+
+.rate-component__description {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+  font-size: 0.875rem;
+  font-weight: var(--regular-weigth);
+}
+
+#ty-element {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+p#ty-element.rate-component__description:first-of-type {
+  margin: 0 auto;
+  padding: 5px 12px;
+  border-radius: 1.375rem;
+  
+  background-color: var(--dark-blue);
+  color: var(--orange);
+}
+
+@media screen and (min-width: 1440px) {
+  .rate-component__button-container {
+    max-width: 340px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .rate-component__rate-button {
+    min-width: 50px;
+    min-height: 50px;
+  }
+
+  .rate-component__submit {
+    max-width: 340px;
+    margin: 2rem;
+  }
+}
+
+.rate-component__button-container {
+  max-width: 281px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rate-component__rate-button {
+  min-width: 42px;
+  min-height: 42px;
+  border: none;
+  border-radius: 50%;
+
+  background-color: var(--dark-blue);
+  color: inherit;
+}
+
+.rate-component__rate-button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rate-component__rate-button:active {
+  background-color: var(--medium-grey);
+  color: var(--white)
+}
+
+.rate-component__submit {
+  min-width: 280px;
+  min-height: 45px;
+  margin: 1.5rem 1.5rem 2rem 1.5rem;
+  border: none;
+  border-radius: 1.375rem;
+
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rate-component__submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}

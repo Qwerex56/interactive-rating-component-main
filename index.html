@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <script src="./src/js/script.js"></script>
+  
+  <title>Interactive rating component | HTML CSS JS DOM BEM</title>
+</head>
+<body>
+  <div id="state-rating" class="rate-component">
+    <img src="./src/images/icon-star.svg" alt="star-image" class="rate-component__star-logo">
+    <h1 class="rate-component__heading">
+      How did we do?
+    </h1>
+    <p class="rate-component__description">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rate-component__button-container">
+      <button onclick="SelectRating(1)" class="rate-component__rate-button">1</button>
+      <button onclick="SelectRating(2)" class="rate-component__rate-button">2</button>
+      <button onclick="SelectRating(3)" class="rate-component__rate-button">3</button>
+      <button onclick="SelectRating(4)" class="rate-component__rate-button">4</button>
+      <button onclick="SelectRating(5)" class="rate-component__rate-button">5</button>
+    </div>
+    <button onclick="SubmitScore()" class="rate-component__submit">Submit</button>
+  </div>
+
+  <div id="state-thank-you" class="rate-component">
+    <img src="./src/images/illustration-thank-you.svg" alt="" class="rate-component__ty-logo">
+    <p id="ty-element" class="rate-component__description">
+      You selected <!-- Add rating here --> out of 5
+    </p>
+    <h1 id="ty-element" class="rate-component__heading">
+      Thank you!
+    </h1>
+    <p id="ty-element" class="rate-component__description">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don't hesitate to get in touch!    
+    </p>
+  </div>
+</body>
+</html>
