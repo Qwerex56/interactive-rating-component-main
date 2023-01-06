@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![First State](./screenshot1.jpg)
-![Second State](./screenshot2.jpg)
+![First State](./screenshot1.jpeg)
+![Second State](./screenshot2.jpeg)
 
 ### Links
 
-- Solution URL: [GitHUbPages](https://your-solution-url.com)
+- Solution URL: [GitHUbPages](https://qwerex56.github.io/interactive-rating-component-main/)
 
 ## My process
 
